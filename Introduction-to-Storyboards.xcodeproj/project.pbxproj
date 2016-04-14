@@ -14,23 +14,6 @@
 		674414261CBEF8C9008E445A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 674414241CBEF8C9008E445A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		6744142D1CBEF8CA008E445A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 674414101CBEF8C6008E445A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 674414171CBEF8C7008E445A;
-			remoteInfo = "Introduction-to-Storyboards";
-		};
-		674414381CBEF8CA008E445A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 674414101CBEF8C6008E445A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 674414171CBEF8C7008E445A;
-			remoteInfo = "Introduction-to-Storyboards";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		674414181CBEF8C7008E445A /* Introduction-to-Storyboards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Introduction-to-Storyboards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6744141B1CBEF8C7008E445A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,26 +22,10 @@
 		674414221CBEF8C9008E445A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		674414251CBEF8C9008E445A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		674414271CBEF8C9008E445A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6744142C1CBEF8CA008E445A /* Introduction-to-StoryboardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Introduction-to-StoryboardsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		674414371CBEF8CA008E445A /* Introduction-to-StoryboardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Introduction-to-StoryboardsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		674414151CBEF8C7008E445A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		674414291CBEF8CA008E445A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		674414341CBEF8CA008E445A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,8 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				674414181CBEF8C7008E445A /* Introduction-to-Storyboards.app */,
-				6744142C1CBEF8CA008E445A /* Introduction-to-StoryboardsTests.xctest */,
-				674414371CBEF8CA008E445A /* Introduction-to-StoryboardsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,42 +84,6 @@
 			productReference = 674414181CBEF8C7008E445A /* Introduction-to-Storyboards.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6744142B1CBEF8CA008E445A /* Introduction-to-StoryboardsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 674414431CBEF8CA008E445A /* Build configuration list for PBXNativeTarget "Introduction-to-StoryboardsTests" */;
-			buildPhases = (
-				674414281CBEF8CA008E445A /* Sources */,
-				674414291CBEF8CA008E445A /* Frameworks */,
-				6744142A1CBEF8CA008E445A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6744142E1CBEF8CA008E445A /* PBXTargetDependency */,
-			);
-			name = "Introduction-to-StoryboardsTests";
-			productName = "Introduction-to-StoryboardsTests";
-			productReference = 6744142C1CBEF8CA008E445A /* Introduction-to-StoryboardsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		674414361CBEF8CA008E445A /* Introduction-to-StoryboardsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 674414461CBEF8CA008E445A /* Build configuration list for PBXNativeTarget "Introduction-to-StoryboardsUITests" */;
-			buildPhases = (
-				674414331CBEF8CA008E445A /* Sources */,
-				674414341CBEF8CA008E445A /* Frameworks */,
-				674414351CBEF8CA008E445A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				674414391CBEF8CA008E445A /* PBXTargetDependency */,
-			);
-			name = "Introduction-to-StoryboardsUITests";
-			productName = "Introduction-to-StoryboardsUITests";
-			productReference = 674414371CBEF8CA008E445A /* Introduction-to-StoryboardsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -167,14 +96,6 @@
 				TargetAttributes = {
 					674414171CBEF8C7008E445A = {
 						CreatedOnToolsVersion = 7.3;
-					};
-					6744142B1CBEF8CA008E445A = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 674414171CBEF8C7008E445A;
-					};
-					674414361CBEF8CA008E445A = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 674414171CBEF8C7008E445A;
 					};
 				};
 			};
@@ -192,8 +113,6 @@
 			projectRoot = "";
 			targets = (
 				674414171CBEF8C7008E445A /* Introduction-to-Storyboards */,
-				6744142B1CBEF8CA008E445A /* Introduction-to-StoryboardsTests */,
-				674414361CBEF8CA008E445A /* Introduction-to-StoryboardsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -209,20 +128,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6744142A1CBEF8CA008E445A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		674414351CBEF8CA008E445A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -235,34 +140,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		674414281CBEF8CA008E445A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		674414331CBEF8CA008E445A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6744142E1CBEF8CA008E445A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 674414171CBEF8C7008E445A /* Introduction-to-Storyboards */;
-			targetProxy = 6744142D1CBEF8CA008E445A /* PBXContainerItemProxy */;
-		};
-		674414391CBEF8CA008E445A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 674414171CBEF8C7008E445A /* Introduction-to-Storyboards */;
-			targetProxy = 674414381CBEF8CA008E445A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6744141F1CBEF8C8008E445A /* Main.storyboard */ = {
@@ -391,52 +269,6 @@
 			};
 			name = Release;
 		};
-		674414441CBEF8CA008E445A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Introduction-to-StoryboardsTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "lawchihon.Introduction-to-StoryboardsTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Introduction-to-Storyboards.app/Introduction-to-Storyboards";
-			};
-			name = Debug;
-		};
-		674414451CBEF8CA008E445A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Introduction-to-StoryboardsTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "lawchihon.Introduction-to-StoryboardsTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Introduction-to-Storyboards.app/Introduction-to-Storyboards";
-			};
-			name = Release;
-		};
-		674414471CBEF8CA008E445A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "Introduction-to-StoryboardsUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "lawchihon.Introduction-to-StoryboardsUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "Introduction-to-Storyboards";
-			};
-			name = Debug;
-		};
-		674414481CBEF8CA008E445A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "Introduction-to-StoryboardsUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "lawchihon.Introduction-to-StoryboardsUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "Introduction-to-Storyboards";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -454,24 +286,6 @@
 			buildConfigurations = (
 				674414411CBEF8CA008E445A /* Debug */,
 				674414421CBEF8CA008E445A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		674414431CBEF8CA008E445A /* Build configuration list for PBXNativeTarget "Introduction-to-StoryboardsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				674414441CBEF8CA008E445A /* Debug */,
-				674414451CBEF8CA008E445A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		674414461CBEF8CA008E445A /* Build configuration list for PBXNativeTarget "Introduction-to-StoryboardsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				674414471CBEF8CA008E445A /* Debug */,
-				674414481CBEF8CA008E445A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
