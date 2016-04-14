@@ -12,8 +12,6 @@
 		674414211CBEF8C8008E445A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6744141F1CBEF8C8008E445A /* Main.storyboard */; };
 		674414231CBEF8C9008E445A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 674414221CBEF8C9008E445A /* Assets.xcassets */; };
 		674414261CBEF8C9008E445A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 674414241CBEF8C9008E445A /* LaunchScreen.storyboard */; };
-		674414311CBEF8CA008E445A /* Introduction_to_StoryboardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674414301CBEF8CA008E445A /* Introduction_to_StoryboardsTests.swift */; };
-		6744143C1CBEF8CA008E445A /* Introduction_to_StoryboardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6744143B1CBEF8CA008E445A /* Introduction_to_StoryboardsUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +40,7 @@
 		674414251CBEF8C9008E445A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		674414271CBEF8C9008E445A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6744142C1CBEF8CA008E445A /* Introduction-to-StoryboardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Introduction-to-StoryboardsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		674414301CBEF8CA008E445A /* Introduction_to_StoryboardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introduction_to_StoryboardsTests.swift; sourceTree = "<group>"; };
-		674414321CBEF8CA008E445A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		674414371CBEF8CA008E445A /* Introduction-to-StoryboardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Introduction-to-StoryboardsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6744143B1CBEF8CA008E445A /* Introduction_to_StoryboardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introduction_to_StoryboardsUITests.swift; sourceTree = "<group>"; };
-		6744143D1CBEF8CA008E445A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				6744141A1CBEF8C7008E445A /* Introduction-to-Storyboards */,
-				6744142F1CBEF8CA008E445A /* Introduction-to-StoryboardsTests */,
-				6744143A1CBEF8CA008E445A /* Introduction-to-StoryboardsUITests */,
 				674414191CBEF8C7008E445A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,24 +97,6 @@
 				674414271CBEF8C9008E445A /* Info.plist */,
 			);
 			path = "Introduction-to-Storyboards";
-			sourceTree = "<group>";
-		};
-		6744142F1CBEF8CA008E445A /* Introduction-to-StoryboardsTests */ = {
-			isa = PBXGroup;
-			children = (
-				674414301CBEF8CA008E445A /* Introduction_to_StoryboardsTests.swift */,
-				674414321CBEF8CA008E445A /* Info.plist */,
-			);
-			path = "Introduction-to-StoryboardsTests";
-			sourceTree = "<group>";
-		};
-		6744143A1CBEF8CA008E445A /* Introduction-to-StoryboardsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				6744143B1CBEF8CA008E445A /* Introduction_to_StoryboardsUITests.swift */,
-				6744143D1CBEF8CA008E445A /* Info.plist */,
-			);
-			path = "Introduction-to-StoryboardsUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +239,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				674414311CBEF8CA008E445A /* Introduction_to_StoryboardsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6744143C1CBEF8CA008E445A /* Introduction_to_StoryboardsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +456,7 @@
 				674414421CBEF8CA008E445A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		674414431CBEF8CA008E445A /* Build configuration list for PBXNativeTarget "Introduction-to-StoryboardsTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +465,7 @@
 				674414451CBEF8CA008E445A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		674414461CBEF8CA008E445A /* Build configuration list for PBXNativeTarget "Introduction-to-StoryboardsUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +474,7 @@
 				674414481CBEF8CA008E445A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
