@@ -16,6 +16,7 @@
 		677360BA1CC437F600EDFB97 /* PlayersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 677360B81CC437F600EDFB97 /* PlayersViewController.xib */; };
 		677360BC1CC43ACD00EDFB97 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677360BB1CC43ACD00EDFB97 /* Player.swift */; };
 		677360BE1CC43C2600EDFB97 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677360BD1CC43C2600EDFB97 /* SampleData.swift */; };
+		677360C61CC4636F00EDFB97 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677360C51CC4636F00EDFB97 /* PlayerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		677360B81CC437F600EDFB97 /* PlayersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayersViewController.xib; sourceTree = "<group>"; };
 		677360BB1CC43ACD00EDFB97 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		677360BD1CC43C2600EDFB97 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		677360C51CC4636F00EDFB97 /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				674414221CBEF8C9008E445A /* Assets.xcassets */,
 				674414241CBEF8C9008E445A /* LaunchScreen.storyboard */,
 				674414271CBEF8C9008E445A /* Info.plist */,
+				677360C51CC4636F00EDFB97 /* PlayerCell.swift */,
 			);
 			path = "Introduction-to-Storyboards";
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				677360C61CC4636F00EDFB97 /* PlayerCell.swift in Sources */,
 				677360BC1CC43ACD00EDFB97 /* Player.swift in Sources */,
 				6744141E1CBEF8C7008E445A /* ViewController.swift in Sources */,
 				6744141C1CBEF8C7008E445A /* AppDelegate.swift in Sources */,

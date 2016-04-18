@@ -15,7 +15,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlayerCell" rowHeight="60" id="zS3-iS-IMY">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlayerCell" rowHeight="60" id="zS3-iS-IMY" customClass="PlayerCell" customModule="Introduction_to_Storyboards" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="320" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zS3-iS-IMY" id="0lz-wV-ka0">
@@ -61,6 +61,11 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="EQ5-0X-G0y" secondAttribute="bottom" id="zmT-CU-RwF"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="gameLabel" destination="Rma-85-SKM" id="yFm-V1-ISW"/>
+                                    <outlet property="nameLabel" destination="1A0-F4-3Og" id="dfC-pw-uN0"/>
+                                    <outlet property="ratingImageView" destination="T8G-Dy-WBr" id="OTA-Su-GJ5"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
