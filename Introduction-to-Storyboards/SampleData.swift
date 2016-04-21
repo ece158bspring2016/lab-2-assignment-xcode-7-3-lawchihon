@@ -10,7 +10,7 @@ import Foundation
 
 //Set up sample data
 
-let playersData = [
-    Player(name:"Friction", game:"Sandra Brown", rating: 5),
-    Player(name: "Fifty Shades of Grey", game: "E L James", rating: 4),
-    Player(name: "The Hunger Games", game: "Suzanne Collins", rating: 4) ]
+let booksData = [
+    Book(title:"Friction", author:"Sandra Brown", rating: 5),
+    Book(title: "Fifty Shades of Grey", author: "E L James", rating: 4),
+    Book(title: "The Hunger Games", author: "Suzanne Collins", rating: 4) ]

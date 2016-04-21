@@ -1,24 +1,24 @@
 //
-//  PlayerCell.swift
+//  BookCell.swift
 //  Introduction-to-Storyboards
 //
-//  Created by John Law on 17/4/2016.
+//  Created by John Law on 21/4/2016.
 //  Copyright © 2016 Chi Hon Law. All rights reserved.
 //
 
 import UIKit
 
-class PlayerCell: UITableViewCell {
+class BookCell: UITableViewCell {
 
-    @IBOutlet weak var gameLabel: UILabel!
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
     @IBOutlet weak var ratingImageView: UIImageView!
 
-    var player: Player! {
+    var book: Book! {
         didSet {
-            gameLabel.text = player.game
-            nameLabel.text = player.name
-            ratingImageView.image = imageForRating(player.rating)
+            titleLabel.text = book.title
+            authorLabel.text = book.author
+            ratingImageView.image = imageForRating(book.rating)
         }
     }
 

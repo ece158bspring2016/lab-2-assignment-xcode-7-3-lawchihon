@@ -1,15 +1,15 @@
 //
-//  PlayersViewController.swift
+//  BooksViewController.swift
 //  Introduction-to-Storyboards
 //
-//  Created by John Law on 17/4/2016.
+//  Created by John Law on 21/4/2016.
 //  Copyright © 2016 Chi Hon Law. All rights reserved.
 //
 
 import UIKit
 
-class PlayersViewController: UITableViewController {
-    var players:[Player] = playersData
+class BooksViewController: UITableViewController {
+    var books:[Book] = booksData
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,21 +29,22 @@ class PlayersViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
         return 1
     }
-    
+
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return players.count
+        // #warning Incomplete implementation, return the number of rows
+        return books.count
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)
-        -> UITableViewCell {
-            let cell = tableView.dequeueReusableCellWithIdentifier("PlayerCell", forIndexPath: indexPath)
-                as! PlayerCell
-            
-            let player = players[indexPath.row] as Player
-            cell.player = player
-            return cell
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("BookCell", forIndexPath: indexPath)
+            as! BookCell
+        
+        let book = books[indexPath.row] as Book
+        cell.book = book
+        return cell
     }
 
     /*
@@ -90,5 +91,5 @@ class PlayersViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
+
 }
