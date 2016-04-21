@@ -11,6 +11,6 @@ import Foundation
 //Set up sample data
 
 let playersData = [
-    Player(name:"Bill Evans", game:"Tic-Tac-Toe", rating: 4),
-    Player(name: "Oscar Peterson", game: "Spin the Bottle", rating: 5),
-    Player(name: "Dave Brubeck", game: "Texas Hold 'em Poker", rating: 2) ]
+    Player(name:"Friction", game:"Sandra Brown", rating: 5),
+    Player(name: "Fifty Shades of Grey", game: "E L James", rating: 4),
+    Player(name: "The Hunger Games", game: "Suzanne Collins", rating: 4) ]
