@@ -1,5 +1,5 @@
 //
-//  BooksViewController.swift
+//  BookDetailsViewControllerTableViewController.swift
 //  Introduction-to-Storyboards
 //
 //  Created by John Law on 21/4/2016.
@@ -8,8 +8,7 @@
 
 import UIKit
 
-class BooksViewController: UITableViewController {
-    var books:[Book] = booksData
+class BookDetailsViewControllerTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,28 +29,23 @@ class BooksViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return books.count
+        return 0
     }
 
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("BookCell", forIndexPath: indexPath)
-            as! BookCell
-        
-        let book = books[indexPath.row] as Book
-        cell.book = book
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+
+        // Configure the cell...
+
         return cell
     }
-
-    @IBAction func cancelToBookViewController(segue:UIStoryboardSegue) {
-    }
-    
-    @IBAction func saveBookDetail(segue:UIStoryboardSegue) {
-    }
+    */
 
     /*
     // Override to support conditional editing of the table view.

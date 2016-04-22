@@ -73,12 +73,56 @@
                             <outlet property="delegate" destination="Vx5-Ca-KVb" id="VBs-aL-C3E"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Books" id="8dQ-NW-27N"/>
+                    <navigationItem key="navigationItem" title="Books" id="8dQ-NW-27N">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Xys-CS-HFr"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bfu-qc-bgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1972" y="-981"/>
+        </scene>
+        <!--Add Book-->
+        <scene sceneID="Sdz-ca-yGT">
+            <objects>
+                <tableViewController id="rP5-8c-3Ll" customClass="BookDetailsViewControllerTableViewController" customModule="Introduction_to_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2V2-GG-93h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Xfa-Rq-JJz">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xfa-Rq-JJz" id="FUg-xF-K1r">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rP5-8c-3Ll" id="b69-4K-yux"/>
+                            <outlet property="delegate" destination="rP5-8c-3Ll" id="bdL-ib-bPl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add Book" id="elW-zG-IEL">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="dmC-3u-FNN">
+                            <connections>
+                                <segue destination="IRF-oZ-lmd" kind="unwind" unwindAction="cancelToBookViewController:" id="CdW-dL-MdT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="S8h-9k-f55">
+                            <connections>
+                                <segue destination="IRF-oZ-lmd" kind="unwind" unwindAction="saveBookDetail:" id="szT-Ds-0XP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YZv-u6-B6y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="IRF-oZ-lmd" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3468.5" y="-981.5"/>
         </scene>
         <!--Gestures-->
         <scene sceneID="UPx-DH-PP4">
@@ -138,6 +182,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kWh-Zi-VPB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1160" y="-981"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qrR-dq-lRJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bNu-Xi-dAh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BAY-iU-POZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rP5-8c-3Ll" kind="relationship" relationship="rootViewController" id="lyG-ga-Ejt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ix2-zP-PUU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2656.5" y="-981.5"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="8hS-F0-6Pk">
+            <objects>
+                <tableViewController id="U1h-iG-0TQ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="0kI-cU-TQs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="eaL-dr-TRb">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eaL-dr-TRb" id="xij-6f-FUd">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="U1h-iG-0TQ" id="upa-bd-TBj"/>
+                            <outlet property="delegate" destination="U1h-iG-0TQ" id="io7-wa-TCQ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Cr-nK-ZRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>
