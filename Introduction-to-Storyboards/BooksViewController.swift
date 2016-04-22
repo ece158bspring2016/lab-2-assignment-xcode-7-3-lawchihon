@@ -51,7 +51,7 @@ class BooksViewController: UITableViewController {
     }
 
     @IBAction func saveBookDetail(segue:UIStoryboardSegue) {
-        if let bookDetailsViewController = segue.sourceViewController as? BooksDetailsViewController {
+        if let bookDetailsViewController = segue.sourceViewController as? BookDetailsViewController {
             
             //add the new book to the books array
             if let book = bookDetailsViewController.book {

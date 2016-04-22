@@ -15,7 +15,7 @@
 		6764CD5C1CC967A000918D43 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6764CD5B1CC967A000918D43 /* Book.swift */; };
 		6764CD5E1CC96B0500918D43 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6764CD5D1CC96B0500918D43 /* BooksViewController.swift */; };
 		6764CD601CC96D4600918D43 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6764CD5F1CC96D4600918D43 /* BookCell.swift */; };
-		6764CD621CC9A09100918D43 /* BooksDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6764CD611CC9A09100918D43 /* BooksDetailsViewController.swift */; };
+		6764CD621CC9A09100918D43 /* BookDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6764CD611CC9A09100918D43 /* BookDetailsViewController.swift */; };
 		677360BE1CC43C2600EDFB97 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677360BD1CC43C2600EDFB97 /* SampleData.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +30,7 @@
 		6764CD5B1CC967A000918D43 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		6764CD5D1CC96B0500918D43 /* BooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		6764CD5F1CC96D4600918D43 /* BookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
-		6764CD611CC9A09100918D43 /* BooksDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksDetailsViewController.swift; sourceTree = "<group>"; };
+		6764CD611CC9A09100918D43 /* BookDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailsViewController.swift; sourceTree = "<group>"; };
 		677360BD1CC43C2600EDFB97 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,7 +70,7 @@
 				677360BD1CC43C2600EDFB97 /* SampleData.swift */,
 				6764CD5B1CC967A000918D43 /* Book.swift */,
 				6764CD5F1CC96D4600918D43 /* BookCell.swift */,
-				6764CD611CC9A09100918D43 /* BooksDetailsViewController.swift */,
+				6764CD611CC9A09100918D43 /* BookDetailsViewController.swift */,
 				6764CD5D1CC96B0500918D43 /* BooksViewController.swift */,
 				674414221CBEF8C9008E445A /* Assets.xcassets */,
 				674414241CBEF8C9008E445A /* LaunchScreen.storyboard */,
@@ -154,7 +154,7 @@
 				6764CD5C1CC967A000918D43 /* Book.swift in Sources */,
 				6764CD5E1CC96B0500918D43 /* BooksViewController.swift in Sources */,
 				6744141E1CBEF8C7008E445A /* ViewController.swift in Sources */,
-				6764CD621CC9A09100918D43 /* BooksDetailsViewController.swift in Sources */,
+				6764CD621CC9A09100918D43 /* BookDetailsViewController.swift in Sources */,
 				6744141C1CBEF8C7008E445A /* AppDelegate.swift in Sources */,
 				677360BE1CC43C2600EDFB97 /* SampleData.swift in Sources */,
 			);

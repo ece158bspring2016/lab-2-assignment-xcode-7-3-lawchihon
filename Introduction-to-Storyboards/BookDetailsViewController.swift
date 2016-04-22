@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BooksDetailsViewController: UITableViewController {
+class BookDetailsViewController: UITableViewController {
     var book:Book?
     
     @IBOutlet weak var titleTextField: UITextField!
@@ -38,5 +38,14 @@ class BooksDetailsViewController: UITableViewController {
         if segue.identifier == "SaveBookDetail" {
             book = Book(title: titleTextField.text!, author: "Chess", rating: 1)
         }
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        print("init BookDetailsViewController")
+        super.init(coder: aDecoder)
+    }
+    
+    deinit {
+        print("deinit BookDetailsViewController")
     }
 }

@@ -89,7 +89,7 @@
         <!--Add Book-->
         <scene sceneID="Sdz-ca-yGT">
             <objects>
-                <tableViewController id="rP5-8c-3Ll" customClass="BooksDetailsViewController" customModule="Introduction_to_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="rP5-8c-3Ll" customClass="BookDetailsViewController" customModule="Introduction_to_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="2V2-GG-93h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
