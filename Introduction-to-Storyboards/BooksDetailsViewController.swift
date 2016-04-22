@@ -8,8 +8,9 @@
 
 import UIKit
 
-class BookDetailsViewControllerTableViewController: UITableViewController {
-
+class BooksDetailsViewController: UITableViewController {
+    var book:Book?
+    
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var detailLabel: UILabel!
     override func viewDidLoad() {
@@ -30,6 +31,12 @@ class BookDetailsViewControllerTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if indexPath.section == 0 {
             titleTextField.becomeFirstResponder()
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "SaveBookDetail" {
+            book = Book(title: titleTextField.text!, author: "Chess", rating: 1)
         }
     }
 }

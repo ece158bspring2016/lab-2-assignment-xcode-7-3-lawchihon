@@ -49,8 +49,19 @@ class BooksViewController: UITableViewController {
 
     @IBAction func cancelToBookViewController(segue:UIStoryboardSegue) {
     }
-    
+
     @IBAction func saveBookDetail(segue:UIStoryboardSegue) {
+        if let bookDetailsViewController = segue.sourceViewController as? BooksDetailsViewController {
+            
+            //add the new book to the books array
+            if let book = bookDetailsViewController.book {
+                books.append(book)
+                
+                //update the tableView
+                let indexPath = NSIndexPath(forRow: books.count-1, inSection: 0)
+                tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+            }
+        }
     }
 
     /*
