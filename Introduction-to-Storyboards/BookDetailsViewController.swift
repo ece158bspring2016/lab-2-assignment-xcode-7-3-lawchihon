@@ -36,8 +36,14 @@ class BookDetailsViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "SaveBookDetail" {
-            book = Book(title: titleTextField.text!, author: "Chess", rating: 1)
+            book = Book(title: titleTextField.text!, author:author, rating: 1)
         }
+        if segue.identifier == "PickAuthor" {
+            if let authorPickerViewController = segue.destinationViewController as? AuthorPickerViewController {
+                authorPickerViewController.selectedAuthor = author
+            }
+        }
+
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -48,4 +54,19 @@ class BookDetailsViewController: UITableViewController {
     deinit {
         print("deinit BookDetailsViewController")
     }
+    
+    var author:String = "Sandra Brown" {
+        didSet {
+            detailLabel.text? = author
+        }
+    }
+    
+    @IBAction func unwindWithSelectedAuthor(segue:UIStoryboardSegue) {
+        if let authorPickerViewController = segue.sourceViewController as? AuthorPickerViewController,
+            selectedAuthor = authorPickerViewController.selectedAuthor {
+            author = selectedAuthor
+        }
+    }
+
+
 }
